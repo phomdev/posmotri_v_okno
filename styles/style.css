@@ -22,7 +22,7 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
-  color: var(--main-white-color);
+  color: var(--main-white-color, #fff);
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
@@ -58,7 +58,7 @@ ol {
 }
 
 .content__accent {
-  color: var(--main-gray-color);
+  color: var(--main-gray-color, #545050);
 }
 
 .content__card-link {
@@ -66,11 +66,11 @@ ol {
   margin: 2.5px;
   display: block;
   text-decoration: none;
-  color: var(--main-white-color);
+  color: var(--main-white-color, #fff);
 }
 
 .content__card-link_current {
-  background-color: var(--main-gray-color);
+  background-color: var(--main-gray-color, #545050);
 }
 
 .content__video-card-title {
@@ -82,6 +82,7 @@ ol {
 }
 
 .content__list {
+  inline-size: 400px;
   block-size: 298px;
   overflow: auto;
   position: relative;
@@ -151,7 +152,7 @@ ol {
   inline-size: 19px;
   block-size: 19px;
   margin-right: 5px;
-  border: 1px solid var(--main-white-color);
+  border: 1px solid var(--main-white-color, #fff);
 }
 
 .search-form__fieldset {
@@ -167,10 +168,10 @@ ol {
   block-size: 27px;
   appearance: none;
   border: none;
-  border-top: 1px solid var(--main-white-color);
-  border-bottom: 1px solid var(--main-white-color);
+  border-top: 1px solid var(--main-white-color, #fff);
+  border-bottom: 1px solid var(--main-white-color, #fff);
   font-family: inherit;
-  color: var(--main-white-color);
+  color: var(--main-white-color, #fff);
   font-size: 18px;
   background-color: transparent;
 }
@@ -219,9 +220,9 @@ ol {
 .button {
   inline-size: 194px;
   block-size: 34px;
-  border: 1px solid var(--main-white-color);
+  border: 1px solid var(--main-white-color, #fff);
   background: transparent;
-  color: var(--main-white-color);
+  color: var(--main-white-color, #fff);
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -244,21 +245,21 @@ ol {
 }
 
 input[type='checkbox']:checked + .search-form__pseudo-checkbox {
-  border: 3px double var(--main-gray-color);
-  background-color: var(--main-white-color);
+  border: 3px double var(--main-gray-color, #545050);
+  background-color: var(--main-white-color, #fff);
 }
 
 .search-form__label:has(:focus-visible) .search-form__textfield:not(:active),
 .button:focus-visible,
 .search-form__checkbox-list .search-form__label:has(:focus-visible),
 .content__card-link:focus-visible {
-  outline: 1px solid var(--main-white-color);
+  outline: 1px solid var(--main-white-color, #fff);
   outline-offset: 2px;
 }
 
 .search-form__label .search-form__textfield:focus-visible {
   outline: none;
-  border: 1px double var(--main-white-color);
+  border: 1px double var(--main-white-color, #fff);
 }
 
 .search-form__checkbox-list .search-form__label:hover,
@@ -269,5 +270,5 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 
 .button:active,
 .content__card-link:active {
-  background: var(--main-gray-color);
+  background: var(--main-gray-color, #545050);
 }
